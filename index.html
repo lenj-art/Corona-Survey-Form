@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <title>Coronavirus Survey</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="title">Coronavirus Survey Form</h1>
+    <p id="description">How is the Coronavirus affecting you?</p>
+    <form id="survey-form">
+        <div id="div1">
+            <label for="name" id="name-label">Name</label>
+            </br>
+            <input id="name" type="text" placeholder="Enter your name" required> 
+            </br>
+        </div>
+
+        <div id="div2">
+            <label for="email" id="email-label">E-Mail</label>
+            </br>
+            <input id="email" type="email" placeholder="Enter your E-Mail" required>
+            </br>
+        </div>
+
+        <div id="div3">
+            <label for="number" id="number-label">Age <em>(optional)</em></label>
+            </br>
+            <input id="number" type="number" min="6" max="120" placeholder="Enter your age">
+        </div>
+
+        <div id="div4">
+            <p>Which consequence has upset you the most?</p>
+            <input type="radio" id="family" value="family" name="radio">
+            <label for="family">Loss of friends or family members</label>
+            </br>
+            <input type="radio" id="job" value="job" name="radio">
+            <label for="job">Loss of employment</label>
+            </br>
+            <input type="radio" id="health" value="hospital" name="radio">
+            <label for="hospital">Personal health</label>
+            </br>
+            <input type="radio" id="personal" value="personal" name="radio">
+            <label for="personal">Cancellation of personal events (Marriages, funerals, birthdays etc.)</label>
+            </br>
+            <input type="radio" id="public" value="public" name="radio">
+            <label for="public">Cancellation of public events (Sports, concerts, museums, bars etc)</label>
+            </br>
+            <input type="radio" id="other" value="other" name="radio">
+            <label for="other">Other</label>
+            </br>
+        </div>
+
+        <div id="div5">
+            <label for="infected">Have you been infected with the Coronavirus?</label>
+            </br>
+            <select id="infected" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="undefined">Don't know</option>
+            </select>
+            </br>
+        </div>
+
+        <div id="div6">
+            <p>What measures do you take to protect yourself? <em>(Check all that apply)</em></p>
+            <input type="checkbox" id="home" value="home" name="checkbox">
+            <label for="home">Staying at home</label>
+            </br>
+            <input type="checkbox" id="mask" value="mask" name="checkbox">
+            <label for="mask">Wearing face masks</label>
+            </br>
+            <input type="checkbox" id="desinfect" value="desinfect" name="checkbox">
+            <label for="desinfect">Using desinfectant</label>
+            </br>
+            <input type="checkbox" id="distance" value="distance" name="checkbox">
+            <label for="distance">Keeping distance of 2 metres</label>
+            </br>
+            <input type="checkbox" id="goggles" value="goggles" name="checkbox">
+            <label for="goggles">Using protective goggles</label>
+            </br>
+        </div>
+
+        <div id="div7">
+            <label for="comment">What is your opinion about the current situation?</label>
+            </br>
+            <textarea id="comment" placeholder="">Enter your comment here...</textarea>
+            </br>
+        </div>
+
+        <div id="div8">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
